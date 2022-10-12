@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font_def: 'Overpass', sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%)
+}
+main{
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rating_screen{
+    font-family: var(--font_def);
+    background-color: var(--Dark-Blue);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 420px;
+    /* display: none; */
+}
+
+img{
+    background-color:hsla(212, 19%, 28%, 0.938);
+    padding:10px ;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+.r_head{
+    color:white;
+    margin-bottom: 15px;
+
+}
+.r_para{
+    color:var(--Medium-Grey);
+    margin-bottom: 20px;
+
+}
+.rating_div{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+
+}
+.rating_div div{
+    background-color:hsla(212, 16%, 23%, 0.938);
+    text-align: center;
+    color:var(--Light-Grey);
+    font-size: small;
+    padding: 10px;
+    width: 37px;
+    border-radius: 70px; 
+    
+}
+.r_btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color: var(--Orange);
+    font-weight: bolder;
+}
+.r_btn:hover{
+    background-color: white;
+    color:var(--Orange);
+    cursor: pointer;
+}
+.rating_div div:hover{
+    cursor: pointer;
+    background-color: var(--Orange);
+    color:white;
+}
+
+.greeting_screen{
+    
+    font-family: var(--font_def);
+    background-color: var(--Dark-Blue);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 420px;
+    /* display: flex; */
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.greeting_screen img{
+    background-color:var(--Dark-Blue);
+}
+.g_div{
+    background-color: aqua;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background-color:hsla(213, 19%, 28%, 0.304);
+    color:var(--Orange);
+    font-size: medium;
+}
+.g_head{
+    color:white;
+    margin-bottom: 15px;
+}
+.g_para{
+    color:var(--Medium-Grey);
+    text-align: center;
+}
